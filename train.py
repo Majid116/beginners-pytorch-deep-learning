@@ -4,7 +4,7 @@ import torch.optim as optim
 import torch.utils.data
 import torch.nn.functional as F
 
-def train(model, optimizer, loss_fn, train_loader, val_loader, epochs=20, device="cpu"):
+def train(model, optimizer, loss_fn, train_loader, val_loader, epochs=10, device="cpu"):
     for epoch in range(epochs):
         training_loss = 0.0
         valid_loss = 0.0
